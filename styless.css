@@ -1,0 +1,197 @@
+/*Header*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+.custom-navbar {
+    background-color: #f7e5d2;
+    padding: 15px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-left: 1%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.forty-seven {
+    font-size: 239%;
+    font-weight: 500;
+    color: black;
+    position: relative;
+    top: -10%;
+}
+
+.th {
+    font-size: 88%;
+    font-weight: 400;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    color: #60695D;
+}
+
+.cafe {
+    font-size: 280%;
+    font-weight: 400;
+    color: #60695D;
+    margin-left: -8%;
+    position: relative;
+    top: 3px;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    font-size: 85%;
+    font-weight: 600;
+    color: #404d3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #a29f90;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.log-in {
+    font-size: 90%;
+    color: #60695d;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.log-in i {
+    font-size: 150%;
+    color: #60695d;
+    margin-right: 3px;
+}
+
+.log-in:hover {
+    color: #a29f90;
+}
+
+.cart {
+    font-size: 90%;
+    color: #60695d;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.cart:hover {
+    color: #a29f90;
+}
+/*the end of the header*/
+
+/*part 1/menu pink*/
+.menu-section{
+    background-color: #fbf2e8;
+    text-align: center;
+    padding: 50px 20px;
+}
+.menu-section h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+.menu-section p{
+    font-size: 18px;
+    color: black;
+    line-height: 1.6; 
+}
+.menu-tabs{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    padding: 15px 30px;
+    border-bottom: 2px solid white;
+    padding-right: 250px;
+}
+.tab{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.tab.active{
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+/* the end of part 1/menu pink*/
+.menu-wrapper {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: white;
+}
+
+.h2 {
+    text-align: left;
+    font-weight: 20px;
+    font-size: 30px;
+}
+.menu-category {
+ font-size: 20px;
+ font-weight: 20px;
+ margin-bottom: 20px;
+}
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu-card {
+    width: 30%;
+    border-bottom: 1px solid #fffbfb;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.menu-card strong{
+    display: block;
+    margin-bottom: 15px;
+}
+.menu-card p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+}
+.price {
+  color: black;
+  font-size: 14px;
+}
