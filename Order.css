@@ -363,3 +363,171 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+@media (max-width: 1024px) {
+    .custom-navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .right-section {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero-image {
+        height: 120px;
+    }
+
+    .order-title {
+        font-size: 2rem;
+    }
+
+    .order-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .status-box {
+        font-size: 0.8rem;
+    }
+
+    .order-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .order-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .newsletter,
+    .social {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social a {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        position: relative;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+        height: 100px;
+    }
+
+    .order-title {
+        font-size: 1.8rem;
+    }
+
+    .order-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .status-box {
+        font-size: 0.7rem;
+    }
+
+    .tabs {
+        gap: 5px;
+    }
+
+    .tab {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .footer {
+        padding: 10% 5%;
+    }
+
+    .footer-bottom {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-navbar {
+        padding: 8px;
+    }
+
+    .hero-image {
+        height: 80px;
+    }
+
+    .order-title {
+        font-size: 1.5rem;
+    }
+
+    .order-subtitle {
+        font-size: 0.7rem;
+    }
+
+    .status-box {
+        font-size: 0.6rem;
+    }
+
+    .order-options {
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .order-info {
+        font-size: 12px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+
+    .footer {
+        padding: 12% 5%;
+    }
+
+    .footer-bottom {
+        font-size: 65%;
+    }
+}

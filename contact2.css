@@ -376,3 +376,134 @@
     color: black;
 }
 /************ ////footer *************/
+
+
+/* Responsive Design */
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .custom-navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .right-section {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .menu-section {
+        padding: 30px 10px;
+    }
+
+    .menu-tabs {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .menu-wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-card {
+        width: 90%;
+    }
+
+    .visit-section {
+        padding: 50px 10px;
+    }
+
+    .lets-conect {
+        font-size: 60px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container,
+    .input-group,
+    .input-last {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .form {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .send-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .newsletter,
+    .social {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social a {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        position: relative;
+        padding: 10px;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .menu-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-card {
+        width: 45%;
+    }
+
+    .lets-conect {
+        font-size: 90px;
+    }
+
+    .form-container,
+    .input-group,
+    .input-last {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .send-button {
+        width: 80%;
+    }
+}
