@@ -104,7 +104,16 @@
 .cart:hover {
     color: #a29f90;
 }
+/************ /////Header *************/
 
+
+
+
+
+
+
+
+/************ footer *************/
 .footer {
     background-color: #3f4739;
     padding: 7% 5%;
@@ -194,6 +203,7 @@
     color: white;
 }
 
+
 .social {
     text-align: right;
 }
@@ -223,6 +233,7 @@
     transform: rotate(10deg) scale(1.3);
 }
 
+
 .footer-bottom {
     width: 100%;
     height: 33px;
@@ -242,12 +253,16 @@
     text-decoration: none;
     color: black;
 }
-
-.footer-bottom a:hover {
+.footer-bottom a:hover  {
     text-decoration: underline;
     color: black;
 }
+/************ ////footer *************/
 
+
+
+
+/* General Styles */
 body {
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
@@ -255,15 +270,17 @@ body {
     padding: 0;
 }
 
+/* Hero Image (Smaller Height) */
 .hero-image {
     width: 100%;
-    height: 160px;
+    height: 160px; /* Reduced height for a more compact layout */
     overflow: hidden;
 }
 
+/* Order Title & Subtitle */
 .order-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Slightly smaller */
     font-weight: 700;
     margin-bottom: 8px;
 }
@@ -274,11 +291,12 @@ body {
     margin-bottom: 12px;
 }
 
+/* Status Box */
 .status-box {
     display: flex;
     align-items: center;
     background-color: #f5efe9;
-    padding: 6px 12px;
+    padding: 6px 12px; /* More compact */
     border-radius: 15px;
     width: fit-content;
     font-size: 0.9rem;
@@ -295,6 +313,7 @@ body {
     margin-right: 5px;
 }
 
+/* Order Options (Pickup / Delivery) */
 .order-options {
     display: flex;
     border: 1px solid #ccc;
@@ -305,11 +324,11 @@ body {
 }
 
 .btn {
-    padding: 8px 20px;
+    padding: 8px 20px; /* Smaller buttons */
     border: none;
     background: none;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 14px; /* Reduced font size */
     transition: 0.3s;
 }
 
@@ -318,11 +337,12 @@ body {
     color: white;
 }
 
+/* Order Info */
 .order-info {
     font-size: 14px;
     color: #555;
     display: flex;
-    gap: 12px;
+    gap: 12px; /* Reduced gap */
     margin-bottom: 12px;
     flex-wrap: wrap;
 }
@@ -338,17 +358,115 @@ body {
     font-weight: bold;
 }
 
+ .nav {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown-nav {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.dropdown-nav.show {
+    display: block;
+}
+
+
+
+.dropdown-nav li {
+    padding: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.dropdown-nav li:hover {
+    background: #f1f1f1;
+
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 15px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    position: relative;
+    color: #333;
+}
+
+.tab.active {
+    font-weight: bold;
+}
+
+.tab.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+/* Separator */
+.nav-separator {
+    height: 15px;
+    width: 1px;
+    background-color: #ccc;
+    display: inline-block;
+}
+
+/* Tabs */
 .tabs {
     display: flex;
     gap: 10px;
 }
 
 .tab {
-    padding: 6px 12px;
+    padding: 6px 12px; /* Smaller tabs */
     border: none;
     background: none;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 14px; /* Smaller font */
     transition: 0.3s;
     font-weight: bold;
 }
@@ -358,97 +476,346 @@ body {
     color: #5a5f50;
 }
 
+/* Section Titles (Drinks & All Day Every Day) */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;  /* Aligned to the left */
+    margin-bottom: 25px;
+    color: #5a3e36;
+}
+
+/* Category Titles */
+.category-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px 0 15px;
+    color: #8b5e3b;
+    padding-bottom: 5px;
+    border-bottom: none; /* Removed underline */
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+/* Section Titles (Drinks & All Day Every Day) */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;  /* Aligned to the left */
+    margin-bottom: 25px;
+    color: #5a3e36;
+}
+
+/* Category Titles */
+.category-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px 0 15px;
+    color: #8b5e3b;
+    padding-bottom: 5px;
+    border-bottom: none; /* Removed underline */
+}
+
+/* Menu Item Cards */
+.menu-item {
+    background-color: #fffaf3;
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 130px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Item Titles */
+.menu-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #5a3e36;
+    margin-bottom: 5px;
+}
+
+/* Item Description */
+.menu-description {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+/* Item Price */
+.menu-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000; /* Changed price color to black */
+}
+
+/* Grid Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-4 {
+    width: 30%;
+}
+
+
 @media (max-width: 1024px) {
+    .col-md-4 {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    /* Navbar */
     .custom-navbar {
-        flex-direction: column;
-        padding: 10px;
+        padding: 10px 2%; /* Reduce padding */
+    }
+
+    .forty-seven {
+        font-size: 180%;
+    }
+
+    .th {
+        font-size: 70%;
+        top: 5%;
+    }
+
+    .cafe {
+        font-size: 210%;
+        top: 1px;
     }
 
     .nav {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        gap: 3px; /* Reduce space between links */
     }
 
-    .right-section {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
+    .nav-link {
+        font-size: 75%;
     }
 
-    .logo {
-        margin-left: 0;
-        text-align: center;
+    .log-in,
+    .cart {
+        font-size: 80%;
     }
 
+    .log-in i {
+        font-size: 120%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 5% 4%; /* Reduce padding */
+    }
+
+    .newsletter {
+        width: 35%; /* Slightly smaller */
+    }
+
+    .newsletter h3 {
+        font-size: 16px;
+    }
+
+    .newsletter input[type="email"] {
+        width: 55%;
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .checkbox-container {
+        gap: 5px;
+    }
+
+    .checkbox-container input[type="checkbox"] {
+        width: 12px;
+        height: 12px;
+    }
+
+    .join-btn {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    .social a {
+        font-size: 130%;
+    }
+
+    .footer-bottom {
+        font-size: 60%;
+        padding: 0.5% 0;
+    }
+
+    /* Hero Image */
     .hero-image {
-        height: 120px;
+        height: 130px; /* Reduce height */
     }
 
+    /* Order Title & Subtitle */
     .order-title {
-        font-size: 2rem;
+        font-size: 2rem; /* Smaller */
     }
 
     .order-subtitle {
         font-size: 0.9rem;
     }
 
+    /* Status Box */
     .status-box {
+        padding: 5px 10px;
         font-size: 0.8rem;
     }
 
-    .order-options {
-        flex-direction: column;
-        align-items: center;
+    .status-dot {
+        width: 6px;
+        height: 6px;
     }
 
+    /* Order Options */
     .btn {
-        width: 100%;
-        text-align: center;
+        padding: 6px 16px;
+        font-size: 12px;
     }
 
+    /* Order Info */
     .order-info {
-        flex-direction: column;
-        align-items: center;
+        font-size: 12px;
+        gap: 8px;
     }
 
+    .order-info i {
+        font-size: 90%;
+    }
+
+    /* Tabs */
     .tabs {
-        flex-wrap: wrap;
-        justify-content: center;
+        gap: 8px;
     }
 
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
+    .tab {
+        font-size: 13px;
     }
 
-    .newsletter,
-    .social {
-        width: 100%;
-        text-align: center;
+    /* Section Titles */
+    .section-title {
+        font-size: 24px;
     }
 
-    .social a {
-        justify-content: center;
+    .category-title {
+        font-size: 18px;
     }
 
-    .footer-bottom {
-        position: relative;
+    /* Menu Items */
+    .menu-item {
         padding: 10px;
+        min-height: 110px;
+    }
+
+    .menu-title {
+        font-size: 16px;
+    }
+
+    .menu-description {
+        font-size: 12px;
+    }
+
+    .menu-price {
+        font-size: 14px;
     }
 }
 
 @media (max-width: 768px) {
-    .hero-image {
-        height: 100px;
+    /* Navbar */
+    .custom-navbar {
+        padding: 8px 2%;
     }
 
+    .forty-seven {
+        font-size: 150%;
+    }
+
+    .th {
+        font-size: 60%;
+        top: 3%;
+    }
+
+    .cafe {
+        font-size: 180%;
+    }
+
+    .nav {
+        gap: 2px;
+    }
+
+    .nav-link {
+        font-size: 70%;
+    }
+
+    .log-in,
+    .cart {
+        font-size: 75%;
+    }
+
+    .log-in i {
+        font-size: 110%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 4% 3%;
+    }
+
+    .newsletter {
+        width: 30%;
+    }
+
+    .newsletter h3 {
+        font-size: 14px;
+    }
+
+    .newsletter input[type="email"] {
+        width: 50%;
+        font-size: 9px;
+        padding: 5px;
+    }
+
+    .join-btn {
+        font-size: 9px;
+        padding: 5px 8px;
+    }
+
+    .social a {
+        font-size: 110%;
+    }
+
+    .footer-bottom {
+        font-size: 50%;
+        padding: 0.3% 0;
+    }
+
+    /* Hero Image */
+    .hero-image {
+        height: 110px;
+    }
+
+    /* Order Title & Subtitle */
     .order-title {
         font-size: 1.8rem;
     }
@@ -457,37 +824,146 @@ body {
         font-size: 0.8rem;
     }
 
+    /* Status Box */
     .status-box {
-        font-size: 0.7rem;
+        padding: 4px 8px;
+        font-size: 0.75rem;
     }
 
+    .status-dot {
+        width: 5px;
+        height: 5px;
+    }
+
+    /* Order Options */
+    .btn {
+        padding: 5px 14px;
+        font-size: 11px;
+    }
+
+    /* Order Info */
+    .order-info {
+        font-size: 11px;
+        gap: 6px;
+    }
+
+    .order-info i {
+        font-size: 85%;
+    }
+
+    /* Tabs */
     .tabs {
-        gap: 5px;
+        gap: 6px;
     }
 
     .tab {
         font-size: 12px;
-        padding: 4px 8px;
     }
 
-    .footer {
-        padding: 10% 5%;
+    /* Section Titles */
+    .section-title {
+        font-size: 22px;
     }
 
-    .footer-bottom {
-        font-size: 70%;
+    .category-title {
+        font-size: 16px;
+    }
+
+    /* Menu Items */
+    .menu-item {
+        padding: 8px;
+        min-height: 100px;
+    }
+
+    .menu-title {
+        font-size: 14px;
+    }
+
+    .menu-description {
+        font-size: 11px;
+    }
+
+    .menu-price {
+        font-size: 12px;
+    }
+
+    /* Reduce Column Widths */
+    .col-md-4 {
+        width: 48%;
     }
 }
 
 @media (max-width: 480px) {
+    /* Navbar */
     .custom-navbar {
-        padding: 8px;
+        padding: 5px 2%;
     }
 
+    .forty-seven {
+        font-size: 130%;
+    }
+
+    .th {
+        font-size: 50%;
+        top: 2%;
+    }
+
+    .cafe {
+        font-size: 160%;
+    }
+
+    .nav-link {
+        font-size: 65%;
+    }
+
+    .log-in,
+    .cart {
+        font-size: 70%;
+    }
+
+    .log-in i {
+        font-size: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 3% 2%;
+    }
+
+    .newsletter {
+        width: 100%;
+    }
+
+    .newsletter h3 {
+        font-size: 12px;
+    }
+
+    .newsletter input[type="email"] {
+        width: 80%;
+        font-size: 8px;
+        padding: 4px;
+    }
+
+    .join-btn {
+        font-size: 8px;
+        padding: 4px 6px;
+    }
+
+    .social a {
+        font-size: 100%;
+    }
+
+    .footer-bottom {
+        font-size: 40%;
+        padding: 0.2% 0;
+    }
+
+    /* Hero Image */
     .hero-image {
-        height: 80px;
+        height: 90px;
     }
 
+    /* Order Title & Subtitle */
     .order-title {
         font-size: 1.5rem;
     }
@@ -496,38 +972,68 @@ body {
         font-size: 0.7rem;
     }
 
+    /* Status Box */
     .status-box {
-        font-size: 0.6rem;
+        padding: 3px 6px;
+        font-size: 0.7rem;
     }
 
-    .order-options {
-        width: 100%;
+    .status-dot {
+        width: 4px;
+        height: 4px;
     }
 
+    /* Order Options */
     .btn {
-        font-size: 12px;
-        padding: 6px;
+        padding: 4px 10px;
+        font-size: 10px;
     }
 
+    /* Order Info */
     .order-info {
-        font-size: 12px;
+        font-size: 10px;
+        gap: 4px;
     }
 
+    /* Tabs */
     .tabs {
-        flex-direction: column;
-        align-items: center;
+        gap: 4px;
     }
 
     .tab {
         font-size: 10px;
-        padding: 3px 6px;
     }
 
-    .footer {
-        padding: 12% 5%;
+    /* Section Titles */
+    .section-title {
+        font-size: 18px;
     }
 
-    .footer-bottom {
-        font-size: 65%;
+    .category-title {
+        font-size: 14px;
+    }
+
+    /* Menu Items */
+    .menu-item {
+        padding: 6px;
+        min-height: 90px;
+    }
+
+    .menu-title {
+        font-size: 12px;
+    }
+
+    .menu-description {
+        font-size: 10px;
+    }
+
+    .menu-price {
+        font-size: 11px;
+    }
+
+    /* Make Menu Full Width */
+    .col-md-4 {
+        width: 100%;
     }
 }
+
