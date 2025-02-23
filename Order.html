@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="order2.css">
+
+    <link rel="stylesheet" href="Order.css">
+    <!---------------- Header-------- ---------->
     <head>
     <nav class="custom-navbar d-flex align-items-center justify-content-between">
         <a href="#" class="logo d-flex align-items-start">
@@ -16,11 +18,11 @@
             <span class="cafe">cafe</span>
         </a>
         <ul class="nav">
-            <li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="ThisIsUs.html" class="nav-link">This Is Us</a></li>
-            <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">This Is Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Order Online</a></li>
-            <li class="nav-item"><a href="contact2.html" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
         </ul>
         <div class="right-section d-flex align-items-center">
             <a href="#" class="log-in">
@@ -30,23 +32,33 @@
         </div>
     </nav>
 </head>
+
+
 <body>
+
+<!-- Hero Image -->
 <div class="hero-image">
-    <img src="Pic1/Order.png" alt="Food and Coffee" class="img-fluid">
+    <img src="Pic/Order.png" alt="Food and Coffee" class="img-fluid">
 </div>
+
 <div class="container">
+    <!-- Order Section -->
     <div class="mt-4">
         <h1 class="order-title">Order Online</h1>
         <p class="order-subtitle">You can order online! Browse our menu items and choose what you’d like to order from us.</p>
     </div>
+
+    <!-- Status Indicator -->
     <div class="status-box">
         <span class="status-dot"></span>
         <span class="ms-2">Accepting Orders</span>
     </div>
+
     <div class="order-options">
         <button class="btn active">Pickup</button>
         <button class="btn">Delivery</button>
     </div>
+
     <div class="order-info">
         <span><i class="fas fa-clock"></i> Pickup time: up to 30 minutes <a href="#">Change</a></span>
         <span><i class="fas fa-map-marker-alt"></i> Pickup Address: San Francisco, CA</span>
@@ -59,41 +71,228 @@
                     <li><a href="#all-day">All Day Every Day</a></li>
                 </ul>
             </div>
+        
             <span class="nav-separator"></span>
+        
             <div class="tabs">
                 <button class="tab" onclick="scrollToSection('coffee')">Coffee</button>
                 <button class="tab" onclick="scrollToSection('specialty-drinks')">Specialty Drinks</button>
             </div>
         </div>
-</div>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        function scrollToSection(id) {
-            const section = document.getElementById(id);
-            if (section) {
-                section.scrollIntoView({ behavior: "smooth", block: "start" });
+        
+
+        
+        <div class="container mt-5">
+          
+         <h1 class="section-title">Drinks</h1>
+         
+    
+         <h2 class="category-title">Coffee</h2>
+         <div class="row">
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Espresso</h3>
+                     <p class="menu-description">A shot of rich, concentrated coffee.</p>
+                     <p class="menu-price">$3.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Americano</h3>
+                     <p class="menu-description">Espresso diluted with hot water.</p>
+                     <p class="menu-price">$4.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Latte</h3>
+                     <p class="menu-description">Espresso with steamed milk and a light layer of foam.</p>
+                     <p class="menu-price">$6.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Cappuccino</h3>
+                     <p class="menu-description">Equal parts espresso, steamed milk, and foam.</p>
+                     <p class="menu-price">$6.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Macchiato</h3>
+                     <p class="menu-description">Espresso "marked" with a dollop of foam or milk.</p>
+                     <p class="menu-price">$6.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Flat White</h3>
+                     <p class="menu-description">Espresso with steamed milk, less frothy than a latte.</p>
+                     <p class="menu-price">$8.00</p>
+                 </div>
+             </div>
+         </div>
+         
+        
+         <h2 class="category-title">Specialty Drinks</h2>
+         <div class="row">
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Chai Latte</h3>
+                     <p class="menu-description">Spiced tea mixed with steamed milk.</p>
+                     <p class="menu-price">$12.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Matcha Latte</h3>
+                     <p class="menu-description">Finely ground green tea powder mixed with milk.</p>
+                     <p class="menu-price">$12.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Golden Latte</h3>
+                     <p class="menu-description">A blend of turmeric, spices, and steamed milk.</p>
+                     <p class="menu-price">$14.00</p>
+                 </div>
+             </div>
+         </div>
+         
+        
+         <h1 class="section-title">All Day Every Day</h1>
+         
+        
+         <h2 class="category-title">Bakery</h2>
+         <div class="row">
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Croissant (Plain/Chocolate)</h3>
+                     <p class="menu-description">Freshly baked, buttery croissant available in plain or chocolate.</p>
+                     <p class="menu-price">$6.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Daily Muffin</h3>
+                     <p class="menu-description">A fresh selection of muffins baked daily.</p>
+                     <p class="menu-price">$6.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Cheesecake</h3>
+                     <p class="menu-description">Rich and creamy cheesecake, perfect for a sweet treat.</p>
+                     <p class="menu-price">$6.00</p>
+                 </div>
+             </div>
+         </div>
+         
+
+         <h2 class="category-title">All-Day Breakfast</h2>
+         <div class="row">
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Granola & Greek Yogurt</h3>
+                     <p class="menu-description">Crunchy granola served with thick Greek yogurt and honey.</p>
+                     <p class="menu-price">$12.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Chia Pudding</h3>
+                     <p class="menu-description">Chia seeds soaked in almond milk with fresh fruit toppings.</p>
+                     <p class="menu-price">$12.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Superfood Acai Bowl</h3>
+                     <p class="menu-description">Blended acai with granola, banana, and berries.</p>
+                     <p class="menu-price">$12.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Avocado Toast</h3>
+                     <p class="menu-description">Smashed avocado on sourdough with chili flakes and olive oil.</p>
+                     <p class="menu-price">$12.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Eggs Benedict</h3>
+                     <p class="menu-description">Poached eggs, hollandaise sauce on a toasted English muffin.</p>
+                     <p class="menu-price">$12.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Bacon & Eggs on Rye</h3>
+                     <p class="menu-description">Crispy bacon and eggs on toasted rye bread.</p>
+                     <p class="menu-price">$12.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Spinach & Salmon Brioche</h3>
+                     <p class="menu-description">Smoked salmon, spinach, and cream cheese on brioche.</p>
+                     <p class="menu-price">$12.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Smoked Salmon Bagel</h3>
+                     <p class="menu-description">Bagel with smoked salmon, cream cheese, and capers.</p>
+                     <p class="menu-price">$12.00</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="menu-item">
+                     <h3 class="menu-title">Green Shakshuka</h3>
+                     <p class="menu-description">Poached eggs in a spiced green sauce with feta.</p>
+                     <p class="menu-price">$12.00</p>
+                 </div>
+             </div>
+         </div>
+        <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            function scrollToSection(id) {
+                const section = document.getElementById(id);
+                if (section) {
+                    section.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
             }
-        }
-        document.querySelectorAll('.dropdown-nav a').forEach(link => {
-            link.addEventListener("click", function (event) {
-                event.preventDefault();
-                const targetId = this.getAttribute("href").substring(1);
-                scrollToSection(targetId);
+        
+            document.querySelectorAll('.dropdown-nav a').forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    scrollToSection(targetId);
+                });
             });
+        
+            // Dropdown Toggle
+            const dropdownToggle = document.querySelector('.dropdown-toggle');
+            const dropdownMenu = document.querySelector('.dropdown-nav');
+        
+            dropdownToggle.addEventListener("click", function (event) {
+                event.stopPropagation(); // Prevent click from closing immediately
+                dropdownMenu.classList.toggle("show");
+            });
+        
+            // Close dropdown when clicking outside
+            document.addEventListener("click", function (event) {
+                if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.remove("show");
+                }
+            });
+        
+            window.scrollToSection = scrollToSection;
         });
-        const dropdownToggle = document.querySelector('.dropdown-toggle');
-        const dropdownMenu = document.querySelector('.dropdown-nav');
-        dropdownToggle.addEventListener("click", function (event) {
-            event.stopPropagation();
-            dropdownMenu.classList.toggle("show");
-        });
-        document.addEventListener("click", function (event) {
-            if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
-                dropdownMenu.classList.remove("show");
-            }
-        });
-        window.scrollToSection = scrollToSection;
-    });
+    
+
+    // Pickup/Delivery toggle
     let buttons = document.querySelectorAll(".btn");
     if (buttons.length) {
         buttons.forEach(button => {
@@ -103,8 +302,17 @@
             });
         });
     }
+
+
 </script>
 </body>
+
+
+
+
+
+
+<!---------------- footer-------- ---------->
 <footer class="footer">
     <div class="footer-container">
         <div class="newsletter">
@@ -142,4 +350,17 @@
         <p>© 2035 by 47th Cafe. Powered and secured by <a href="https://www.wix.com/">Wix</a></p>
     </div>
 </footer>
+ <!---------------- ///footer-------- ---------->
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
